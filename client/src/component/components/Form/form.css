@@ -1,0 +1,45 @@
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: black;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem ;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: var(--transition);
+    margin-right: 10px;
+
+  }
+  .btn:hover {
+    background: black;
+    color: white;
+    border-color: var(--color-primary);
+  }
+  .btn-primary {
+    background: black;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    transition: var(--transition);
+  }
+
+
+  :root {
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: black;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #ffff;
+    --color-light: rgba(255, 255, 255, 0.6);
+  
+    --transition: all 400ms ease;
+  
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-ms: 98%;
+    --cursor-color: #fff
+  }

@@ -1,0 +1,61 @@
+
+.appBar {
+
+  margin-Bottom: 30px;
+
+
+
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+
+
+
+
+.brandContainer {
+ 
+  object-fit: contain;
+  max-Width: 9%;
+
+margin-left: 45%;
+}
+
+
+.logo-image {
+  background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:600px) {
+  .brandContainer {
+    
+    max-Width: 25%;
+    margin-left: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:600px) {
+    .brandContainer {
+      
+     width: 30%;
+
+    }
+} */
+/* @media screen and (max-width:1024px) {
+    .brandContainer {
+
+      max-width: 15%;
+
+    }
+} */
+

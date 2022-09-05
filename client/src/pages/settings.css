@@ -1,0 +1,44 @@
+
+.profile-container {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+    border: 1px solid black;
+
+    background-image: url(./avatar3.png);
+    margin-bottom: 10%;
+   
+}
+
+.profile-picture {
+    opacity: 0%;
+
+    margin-top: 45%;
+   
+}
+
+button, input, optgroup, select, textarea {
+    font-size: 80%;
+   
+}
+
+.profile-picture:hover {
+   opacity: 100%;
+   
+}
+.profile-contains {
+
+    padding-left: 33%;
+}
+#sign {
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .profile-contains {
+
+        padding-left: 23%;
+    }
+   
+}

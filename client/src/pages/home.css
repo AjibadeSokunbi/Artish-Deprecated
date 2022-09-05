@@ -1,0 +1,265 @@
+.home_container {
+            display: grid;
+            grid-template-columns: 1fr;
+            
+}
+.skills-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+}
+.description-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+.loader {
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+}
+
+.location-container {
+    padding-top: 6px;
+    padding-bottom: 10px;  
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  
+}
+
+.title-1 {
+    font-size: 200%;
+    font-weight: 900;
+    background: -webkit-linear-gradient(rgb(55, 120, 204), #f8b9d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.soccials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-container {
+   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 20px;
+
+}
+.image-home {
+    border-radius: 50%;
+    width: 45%;
+    box-shadow: 0px 0px  10px grey;
+}
+.desc {
+    
+    background-color: black;
+    color: #fff;
+    border-radius: 24px;
+    padding-top: 6px;
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+
+}
+
+
+.contain-contain {
+    background: rgba(241, 200, 200, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+   margin-left: 10%;
+
+   margin-top: 4%;
+
+}
+
+.contained-grid {
+    display: grid;
+    grid-template-columns: 30% 65%;
+
+}
+
+.description-1 {
+    text-align: center;
+
+    font-size: 80%;
+    font-weight: 600;
+padding-left: 15px;
+padding-right: 15px;
+background: #fff;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid rgba(255,255,255,0.2);
+    border-left: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 29px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+   
+}
+
+.description-2 {
+    text-align: center;
+    font-weight: 500;
+    color: grey;
+}
+.description-3 {
+    text-align: center;
+    font-weight: 400;
+    color: grey;
+}
+
+.container-oppurtunities {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1300px) {
+
+    
+    .description-1 {
+        text-align: center;
+        font-size: 70%;
+        font-weight: 900;
+        padding: 3%;
+    }
+
+    .contained-grid {
+        display: grid;
+        grid-template-columns: 40% 55%;
+    
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+
+    
+ .description-1 {
+        text-align: center;
+        font-size: 70%;
+        font-weight: 900;
+        padding: 2%;
+    }
+
+    .contained-grid {
+        display: grid;
+        grid-template-columns: 40% 55%;
+    
+    } 
+}
+
+
+@media screen and (max-width:900px) {
+    .contained-grid {
+ 
+        grid-template-columns: 1fr;
+    
+    }
+    .contain-contain {
+      
+        margin-left: 8%;
+        margin-right: 8%;
+     
+    }
+    .description-container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .description-1 {
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 100%;
+        font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+        border-radius: 24px;
+        padding-top: 5px;
+        padding-bottom: 5px;     
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home_container {
+
+        justify-content: center;
+        grid-template-columns: 1fr;
+}
+
+.contained-grid {
+
+    justify-content: center;
+    grid-template-columns: 1fr;
+
+}
+
+.description-container {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.description-1 {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 100%;
+    font-weight: 500;
+padding-left: 10px;
+padding-right: 10px;
+    border-radius: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;     
+}
+
+}
+    
