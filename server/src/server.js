@@ -8,7 +8,7 @@ const path = require("path");
 
 // Setting up port
 const connUri = process.env.CONNECTION_URL;
-let PORT = process.env.PORT || 8000;
+let PORT = process.env.PORT || 3030;
 
 //=== 1 - CREATE APP
 // Creating express app and configuring middleware needed for authentication
