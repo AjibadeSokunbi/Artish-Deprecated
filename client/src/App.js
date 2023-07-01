@@ -19,7 +19,7 @@ import FadeLoader from "react-spinners/FadeLoader";
 import decode from 'jwt-decode';
 import 'font-awesome/css/font-awesome.min.css';
 import {  useLocation} from 'react-router-dom';
-import UpdatePassword from './component/components/Auth/UpdatePassword';
+
 import CompleteSignUp from './component/components/Auth/CompleteSignUp';
 import Dummy from './component/components/Auth/Dummy';
 
@@ -123,7 +123,7 @@ const App = () => {
     <Route path="/SwitchToIndependent" element={(<SwitchToIndependent />)} />
     <Route path="/HireFreelancer" element={(<HireFreelancer />)} />
     <Route path="/forgotpassword" element={<ForgotPassword />} />
-    <Route path='/api/auth/reset/:token' element={<UpdatePassword />} />
+
 
 
 

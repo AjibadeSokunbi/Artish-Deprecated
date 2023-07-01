@@ -149,20 +149,26 @@ const Auth = () => {
 
               <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
               <Input name="lastName" label="Last Name" handleChange={handleChange} half />
-            </>
-            )}
-            
-            <Input name="email" label="Email Address" handleChange={handleChange} type="email" />
-            <Input name="password" label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
-     
-     
-            { isSignup && (
-            <> 
+              <Input name="skill1" label="Freelancing Skill"  handleChange={handleChange} half />
+  
+  <Input name="skill2" label="Freelancing Skill" handleChange={handleChange} half />
+  <Input name="country" label="Country"  handleChange={handleChange} half />
+ 
+ <Input name="state" label="State" handleChange={handleChange} half />
 
-            <Input name="confirmPassword" label="Repeat Password" handleChange={handleChange} type="password" />
-           
             </>
             )}
+            { !isSignup && (
+              <>
+
+            <Input name="email"  id={!isSignup ?  'sign' : 'sginin'} label="Email Address" handleChange={handleChange} type="email" />
+            <Input name="password"  id={!isSignup ?  'sign' : 'sginin'} label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
+            </>
+           
+           )}
+              
+     
+
         
 
           </Grid>
@@ -190,8 +196,8 @@ const Auth = () => {
                  <a href="#CompleteSignUp" >
     <Button  fullWidth variant="contained" style={{color: "white", paddingLeft: '160px',paddingRight: '160px'  ,
     backgroundColor: '#000',
-
-    }} className={classes.submit}>
+}}
+ className={classes.submit}>
   NEXT
 </Button>
 </a>
@@ -207,9 +213,10 @@ const Auth = () => {
         
           <Grid container justifyContent="center">
             <Grid item>
-              <Button onClick={switchMode} style={{color: 'grey'}}>
+            <Button onClick={switchMode} style={{color: 'grey'}}>
                 { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
               </Button>
+
             </Grid>
           </Grid>
 
@@ -223,7 +230,7 @@ const Auth = () => {
           <CompleteSignUp/>
           </div>
       <Paper className={classes.paper} elevation={3}>
-      <Typography component="h1" variant="h5" style={{fontWeight: '500' , textAlign: 'center', marginBottom: '20px'}}>COMPLETE YOUR PROFILE</Typography>
+      <Typography component="h1" variant="h5" style={{fontWeight: '500' , textAlign: 'center', marginBottom: '20px'}}>SET UP YOUR PROFILE</Typography>
       <Grid container spacing={2}>
 
       <div className='profile-contains'>
@@ -234,13 +241,9 @@ const Auth = () => {
             </div>
             </div>
             <Input name="bio" label="Bio" handleChange={handleChange} type="bio" />
-            <Input name="skill1" label="Freelancing Skill"  handleChange={handleChange} half />
-  
-   <Input name="skill2" label="Freelancing Skill" handleChange={handleChange} half />
-   <Input name="country" label="Country"  handleChange={handleChange} half />
-  
-  <Input name="state" label="State" handleChange={handleChange} half />
-
+            <Input name="socialmedialink1" label="GitHub Link" handleChange={handleChange} type="socialmedialink1" />
+            <Input name="socialmedialink2" label="Twitter Link" handleChange={handleChange} type="socialmedialink2" />
+            <Input name="socialmedialink3" label="Linkdn Profile Link" handleChange={handleChange} type="socialmedialink3" />
    </Grid>
    { isSignup && (
                  <a href="#Dummy" >
@@ -259,13 +262,20 @@ const Auth = () => {
           <Dummy/>
           </div>
       <Paper className={classes.paper} elevation={3}>
-      <Typography component="h1" variant="h5" style={{fontWeight: '500' , textAlign: 'center', marginBottom: '20px'}}>YOUR SOCIAL LINKS</Typography>
+      <Typography component="h1" variant="h5" style={{fontWeight: '500' , textAlign: 'center', marginBottom: '20px'}}>COMPLETE SIGN UP</Typography>
       <Grid container spacing={2}>
 
-            <Input name="socialmedialink1" label="GitHub Link" handleChange={handleChange} type="socialmedialink1" />
-            <Input name="socialmedialink2" label="Twitter Link" handleChange={handleChange} type="socialmedialink2" />
-            <Input name="socialmedialink3" label="Linkdn Profile Link" handleChange={handleChange} type="socialmedialink3" />
+           
+                        
+            <Input name="email" className='sign' label="Email Address" handleChange={handleChange} type="email" />
+            <Input name="password" id={!isSignup ?  'sign' : 'sginin'} label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
+            { isSignup && (
+            <> 
 
+            <Input name="confirmPassword" label="Repeat Password" handleChange={handleChange} type="password" />
+           
+            </>
+            )}
    </Grid>
    {!isLoading && (
   <Button type="submit" fullWidth variant="contained" style={{color: "white",
